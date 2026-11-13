@@ -1,0 +1,637 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta property="og:title" content="Geburtstagswochenende 2027"><meta property="og:description" content="Drei Hotels für das Wochenende vom 19. bis 21. Februar 2027. Schaut rein und stimmt ab."><meta property="og:image" content="https://hotelwahl-2027.vercel.app/img/deimann-0.jpg"><style>body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Nikolas wird 40</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800;900&display=swap">
+<style>
+/* Layout: ein Comic-Heft zum Runterscrollen. Jede Sektion ist ein Panel mit dicker Tuschelinie,
+   hartem Schatten und Rasterpunkten. Hell ist Standard, der Schalter oben wechselt auf die Nachtausgabe. */
+:root{
+  color-scheme: light;
+  --page:#ffd400;
+  --dot:rgba(21,19,31,.16);
+  --paper:#fdfdf6;
+  --fg:#15131f;
+  --edge:#15131f;
+  --muted:#575466;
+  --snow:#e9f6ff;
+  --a-hike:#e3f6ec;
+  --a-sauna:#ffe9e5;
+  --a-swim:#e2f5fd;
+  --ink:#15131f;      /* fest: Text auf bunten Flächen */
+  --light:#fdfdf6;    /* fest: heller Text auf bunten Flächen */
+  --sun:#ffd400;
+  --pool:#22b8ea;
+  --hot:#ff4b3a;
+  --pine:#1f9d6b;
+  --display:"Bangers","Impact","Arial Narrow Bold",sans-serif;
+  --body:"Nunito","Segoe UI",system-ui,-apple-system,sans-serif;
+  --line:3px solid var(--edge);
+  --shadow:6px 6px 0 var(--edge);
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#17142a;
+  --dot:rgba(243,240,255,.10);
+  --paper:#221f36;
+  --fg:#f3f0ff;
+  --edge:#f3f0ff;
+  --muted:#b6b1cc;
+  --snow:#2e2a48;
+  --a-hike:#1d3a30;
+  --a-sauna:#47231f;
+  --a-swim:#17384a;
+}
+*{box-sizing:border-box}
+body{background:var(--page);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;
+  background-image:radial-gradient(var(--dot) 1.5px,transparent 1.6px);background-size:14px 14px}
+.wrap{max-width:560px;margin:0 auto;padding-block:16px 48px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:28px}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.03em;line-height:1;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+
+.topbar{display:flex;justify-content:flex-end;margin-bottom:-14px}
+.theme{font-family:var(--body);font-weight:900;font-size:14px;color:var(--fg);background:var(--paper);border:2px solid var(--edge);border-radius:999px;padding:5px 14px;cursor:pointer}
+
+.panel{background:var(--paper);border:var(--line);border-radius:10px;box-shadow:var(--shadow);overflow:hidden}
+.pad{padding:18px;display:flex;flex-direction:column;gap:14px}
+
+/* Hero */
+.hero{position:relative;text-align:center;padding:26px 18px 22px;display:flex;flex-direction:column;align-items:center;gap:14px;color:var(--ink);
+  background:var(--pool);background-image:radial-gradient(rgba(255,255,255,.35) 2px,transparent 2.2px);background-size:12px 12px}
+.burst{width:190px;height:190px;position:relative;display:grid;place-items:center}
+.burst svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 40s linear infinite}
+.burst span{position:relative;font-family:var(--display);font-size:92px;color:var(--hot);-webkit-text-stroke:3px var(--ink);
+  text-shadow:5px 5px 0 var(--ink);transform:rotate(-6deg)}
+.hero h1{font-size:clamp(40px,12vw,58px);color:var(--light);-webkit-text-stroke:2px var(--ink);text-shadow:4px 4px 0 var(--ink)}
+.hero .sub{font-weight:800;font-size:17px;background:var(--light);color:var(--ink);border:3px solid var(--ink);border-radius:8px;padding:6px 12px;transform:rotate(-1.5deg)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{background:var(--sun);color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:4px 12px;font-weight:800;font-size:14px}
+
+/* Sprechblase */
+.bubble{position:relative;background:var(--paper);border:var(--line);border-radius:22px;padding:22px 18px 16px;font-weight:700;box-shadow:var(--shadow);margin-bottom:-4px}
+.bubble .says{position:absolute;top:-15px;left:18px;font-family:var(--display);font-size:19px;letter-spacing:.05em;line-height:1;
+  background:var(--sun);color:var(--ink);border:3px solid var(--edge);border-radius:6px;padding:4px 10px;transform:rotate(-2deg)}
+.bubble .tail{position:absolute;left:52px;bottom:-27px;width:40px;height:30px;overflow:visible}
+
+/* Vergleichsbalken */
+.kicker{font-family:var(--display);font-size:30px}
+.bars{display:flex;flex-direction:column;gap:12px}
+.bar-row{display:flex;flex-direction:column;gap:4px}
+.bar-label{display:flex;justify-content:space-between;font-weight:800;gap:8px}
+.bar-label span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.track{height:26px;border:var(--line);border-radius:6px;background:var(--snow);overflow:hidden}
+.fill{height:100%;width:var(--w);border-right:var(--line)}
+.in .fill{animation:grow .9s cubic-bezier(.2,.9,.3,1.2) both}
+.note{font-size:14px;color:var(--muted)}
+
+/* Hotel-Panels */
+.hotel-head{padding:14px 18px;border-bottom:var(--line);display:flex;flex-direction:column;gap:6px;color:var(--ink)}
+.hotel-head.on-dark{color:var(--light)}
+.hotel-head h2{font-size:clamp(34px,10vw,44px)}
+.hotel-head .where{font-weight:800}
+.tag{align-self:flex-start;font-family:var(--display);font-size:18px;letter-spacing:.05em;background:var(--ink);color:var(--light);
+  padding:3px 10px;border-radius:4px;transform:rotate(-2deg)}
+.tag.sun{background:var(--sun);color:var(--ink)}
+.photo{margin:0}
+.photo .main{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-bottom:var(--line);background:var(--snow)}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px 18px 0}
+.thumbs button{padding:0;background:none;cursor:pointer;border:2px solid var(--edge);border-radius:6px;overflow:hidden;opacity:.65;display:block;transition:transform .12s,opacity .12s}
+.thumbs button[aria-pressed="true"]{opacity:1;transform:rotate(-2deg) scale(1.04);box-shadow:3px 3px 0 var(--edge)}
+.thumbs img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.price{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.price .big{font-family:var(--display);font-size:64px;line-height:.9}
+.price .big small{font-family:var(--body);font-size:15px;font-weight:800;display:block;margin-top:6px}
+.price .total{font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
+.price .total b{font-size:22px;display:block}
+
+.facts{margin:0;display:grid;grid-template-columns:1fr;gap:0;border:var(--line);border-radius:8px;overflow:hidden}
+.facts div{display:grid;grid-template-columns:118px 1fr;gap:10px;padding:9px 12px;border-bottom:2px solid var(--edge);min-width:0}
+.facts div:last-child{border-bottom:0}
+.facts dt{font-weight:900;font-size:13px;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}
+.facts dd{margin:0;font-weight:600;min-width:0}
+.yes{display:inline-block;background:var(--pine);color:var(--light);font-weight:900;border-radius:4px;padding:0 8px;margin-right:6px}
+.warn{display:inline-block;background:var(--hot);color:var(--light);font-weight:900;border-radius:4px;padding:0 8px;margin-right:6px}
+.score{font-family:var(--display);font-size:26px;background:var(--sun);color:var(--ink);border:2px solid var(--ink);border-radius:6px;padding:0 8px;margin-right:8px;display:inline-block;line-height:1.25}
+
+.acts{display:grid;grid-template-columns:1fr;gap:10px}
+.act{border:var(--line);border-radius:8px;padding:10px 12px;min-width:0}
+.act h3{font-size:22px;margin-bottom:2px}
+.act p{font-weight:600;font-size:15px}
+.a-hike{background:var(--a-hike)}.a-sauna{background:var(--a-sauna)}.a-swim{background:var(--a-swim)}
+
+details{border:var(--line);border-radius:8px;background:var(--snow)}
+summary{cursor:pointer;font-weight:900;padding:10px 12px;list-style:none;display:flex;justify-content:space-between;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--body);font-weight:900;font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details ul{margin:0;padding:0 12px 12px 30px;display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px}
+
+.btn{display:block;text-align:center;text-decoration:none;font-family:var(--display);font-size:24px;letter-spacing:.05em;
+  background:var(--hot);color:var(--light);border:var(--line);border-radius:8px;padding:12px 14px;box-shadow:4px 4px 0 var(--edge);
+  transition:transform .08s,box-shadow .08s}
+.btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--edge)}
+
+/* Abstimmung */
+.vote-opts{display:grid;grid-template-columns:1fr;gap:10px}
+.vote-opts button{font-family:var(--display);font-size:24px;letter-spacing:.04em;color:var(--fg);background:var(--paper);border:var(--line);border-radius:8px;
+  padding:12px;cursor:pointer;box-shadow:4px 4px 0 var(--edge);text-align:left;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.vote-opts button span{font-family:var(--body);font-size:15px;font-weight:800;white-space:nowrap}
+.vote-opts button[aria-pressed="true"]{background:var(--sun);color:var(--ink);transform:translate(2px,2px);box-shadow:2px 2px 0 var(--edge)}
+.res{display:flex;flex-direction:column;gap:12px}
+.msg{border:var(--line);border-radius:8px;background:var(--snow);padding:12px;font-weight:700;user-select:all}
+.copy{font-family:var(--body);font-weight:900;font-size:16px;color:var(--paper);background:var(--fg);border:var(--line);border-radius:8px;padding:10px 14px;cursor:pointer;align-self:flex-start}
+.foot{font-size:13px;font-weight:600;text-align:center}
+
+/* Die Crew */
+.crew{display:block;width:100%;height:auto;border-bottom:var(--line)}
+.crew .bob{animation:bob 2.6s ease-in-out infinite}
+.crew .b2{animation-delay:-.7s}.crew .b3{animation-delay:-1.4s}.crew .b4{animation-delay:-2s}
+.crew .cheers{animation:cheers 5s ease-in-out infinite}
+.crew .c2{animation-delay:.15s}.crew .c3{animation-delay:.3s}.crew .c4{animation-delay:.45s}
+.crew .blink{animation:blink 4.2s infinite}
+.crew .b2 .blink{animation-delay:-1.3s}.crew .b3 .blink{animation-delay:-2.6s}.crew .b4 .blink{animation-delay:-.6s}
+.crew .wave{animation:wave 3.5s linear infinite}
+.crew .wave.w2{animation-duration:5s}
+.crew .cloud{animation:drift 14s ease-in-out infinite alternate}
+.crew .cloud.c2{animation-duration:19s}
+.crew .sunrays{animation:spin 24s linear infinite}
+.crew .prost{animation:prost 5s cubic-bezier(.2,1.5,.4,1) infinite}
+.crew .fish{animation:fish 7s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes cheers{0%,52%,100%{transform:rotate(0)}62%{transform:rotate(38deg)}70%{transform:rotate(30deg)}78%{transform:rotate(38deg)}88%{transform:rotate(0)}}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+@keyframes wave{from{transform:translateX(0)}to{transform:translateX(-32px)}}
+@keyframes drift{from{transform:translateX(-8px)}to{transform:translateX(26px)}}
+@keyframes prost{0%,56%{transform:scale(0) rotate(-20deg)}64%,82%{transform:scale(1) rotate(-6deg)}90%,100%{transform:scale(0) rotate(10deg)}}
+@keyframes fish{0%,70%{transform:translate(0,18px) rotate(0);opacity:0}74%{opacity:1;transform:translate(8px,-6px) rotate(-40deg)}82%{transform:translate(26px,-22px) rotate(0)}90%{opacity:1;transform:translate(44px,-4px) rotate(45deg)}94%,100%{opacity:0;transform:translate(50px,18px) rotate(60deg)}}
+.hero .spark{position:absolute;width:26px;height:26px;animation:twinkle 2.4s ease-in-out infinite}
+.hero .spark.s2{animation-delay:-.8s}.hero .spark.s3{animation-delay:-1.6s}
+@keyframes twinkle{0%,100%{transform:scale(.5) rotate(0);opacity:.5}50%{transform:scale(1.1) rotate(20deg);opacity:1}}
+
+/* Bewegung */
+.pop.in{animation:pop .55s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pop{0%{transform:scale(.94) rotate(-1deg)}60%{transform:scale(1.02) rotate(.4deg)}100%{transform:none}}
+@keyframes grow{from{width:0}to{width:var(--w)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (min-width:480px){.facts div{grid-template-columns:150px 1fr}}
+</style>
+
+<div class="wrap">
+
+  <div class="topbar"><button type="button" class="theme" id="theme" aria-label="Zwischen heller und dunkler Ansicht wechseln">Dunkel</button></div>
+
+  <header class="panel hero">
+    <svg class="spark" style="top:26px;left:26px" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#fdfdf6" stroke="#15131f" stroke-width="2" stroke-linejoin="round"/></svg><svg class="spark s2" style="top:70px;right:30px" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#fdfdf6" stroke="#15131f" stroke-width="2" stroke-linejoin="round"/></svg><svg class="spark s3" style="top:190px;left:44px" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 1 L16 10 L25 13 L16 16 L13 25 L10 16 L1 13 L10 10 Z" fill="#fdfdf6" stroke="#15131f" stroke-width="2" stroke-linejoin="round"/></svg>
+    <div class="burst" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><polygon fill="#ffd400" stroke="#15131f" stroke-width="5" stroke-linejoin="round"
+        points="100,4 116,38 146,14 148,52 186,44 168,78 198,100 168,122 186,156 148,148 146,186 116,162 100,196 84,162 54,186 52,148 14,156 32,122 2,100 32,78 14,44 52,52 54,14 84,38"/></svg>
+      <span>40</span>
+    </div>
+    <h1>Jungs, ich werde 40!</h1>
+    <p class="sub">Zwei Nächte Sauna, Wandern und Schwimmen</p>
+    <div class="chips">
+      <span class="chip">Fr 19. bis So 21. Februar 2027</span>
+      <span class="chip">Nikolas, Martin, Max, Toni</span>
+      <span class="chip">2 Doppelzimmer</span>
+    </div>
+  </header>
+
+  <div class="bubble pop">
+    <span class="says">Nikolas sagt</span>
+    <p>Drei Hotels stehen zur Wahl. Scrollt einmal durch, schaut euch die Links an und sagt mir unten, wo ihr hinwollt.</p>
+    <svg class="tail" viewBox="0 0 40 30" aria-hidden="true"><path d="M3 0 L14 27 L37 0" style="fill:var(--paper);stroke:var(--edge)" stroke-width="3" stroke-linejoin="round"/></svg>
+  </div>
+
+  <section class="panel pop crew-panel" aria-labelledby="crew">
+    <svg class="crew" viewBox="0 0 400 300" role="img" aria-label="Vier Comicfiguren stehen mit Bierflaschen im Bach und stoßen an">
+      <defs>
+        <g id="bottle">
+          <rect x="-5" y="-31" width="10" height="31" rx="3" fill="#7a4a21" stroke="#15131f" stroke-width="2.5"/>
+          <rect x="-2.5" y="-43" width="5" height="13" fill="#7a4a21" stroke="#15131f" stroke-width="2.5"/>
+          <rect x="-3.5" y="-46" width="7" height="4" rx="1" fill="#e0e0e0" stroke="#15131f" stroke-width="2"/>
+          <rect x="-5" y="-24" width="10" height="11" fill="#fdfdf6" stroke="#15131f" stroke-width="1.5"/>
+          <circle cx="0" cy="-18.5" r="2.4" fill="#ff4b3a"/>
+          <circle cx="0" cy="-7" r="7.5" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+          <path d="M-4 -9 h8 M-4 -5 h8" stroke="#15131f" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+        <g id="legs" fill="#f2c9a5" stroke="#15131f" stroke-width="3">
+          <rect x="-19" y="208" width="13" height="58"/><rect x="6" y="208" width="13" height="58"/>
+        </g>
+        <g id="eyes">
+          <g transform="translate(-9 90)"><ellipse class="blink" rx="2.8" ry="3.6" fill="#15131f"/></g>
+          <g transform="translate(9 90)"><ellipse class="blink" rx="2.8" ry="3.6" fill="#15131f"/></g>
+          <path d="M-14 82 q5 -4 10 -1 M4 81 q5 -3 10 1" fill="none" stroke="#15131f" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M0 93 q4 5 -1 7" fill="none" stroke="#15131f" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="-15" cy="99" r="4" fill="#ff8f7a" fill-opacity=".55"/><circle cx="15" cy="99" r="4" fill="#ff8f7a" fill-opacity=".55"/>
+        </g>
+        <g id="head" stroke="#15131f" stroke-width="3" fill="#f2c9a5">
+          <rect x="-7" y="108" width="14" height="14"/>
+          <circle cx="-24" cy="93" r="5.5"/><circle cx="24" cy="93" r="5.5"/>
+          <circle cx="0" cy="92" r="24"/>
+        </g>
+        <g id="ripples" fill="none" stroke="#fdfdf6" stroke-width="2.5">
+          <ellipse cx="-12.5" cy="243" rx="12" ry="3.5"/><ellipse cx="12.5" cy="243" rx="12" ry="3.5"/>
+        </g>
+      </defs>
+
+      <!-- Himmel, Sonne, Wolken -->
+      <rect width="400" height="300" fill="#bfe9fb"/>
+      <g transform="translate(352 40)">
+        <g class="sunrays" stroke="#15131f" stroke-width="3" stroke-linecap="round">
+          <path d="M0 -30 V-38 M0 30 V38 M-30 0 H-38 M30 0 H38 M21 -21 L27 -27 M-21 -21 L-27 -27 M21 21 L27 27 M-21 21 L-27 27"/>
+        </g>
+        <circle r="20" fill="#ffd400" stroke="#15131f" stroke-width="3"/>
+      </g>
+      <g class="cloud"><path d="M20 44 q0 -14 16 -12 q6 -14 22 -6 q16 -6 18 10 q12 2 8 12 h-62 q-8 -2 -2 -4 z" fill="#fff" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/></g>
+      <g class="cloud c2"><path d="M210 30 q0 -10 12 -9 q5 -10 16 -4 q12 -4 13 7 q9 2 6 9 h-45 q-6 -1 -2 -3 z" fill="#fff" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/></g>
+
+      <!-- Ufer mit Büschen und Weidenröschen -->
+      <g fill="#2bb37d" stroke="#15131f" stroke-width="3">
+        <circle cx="14" cy="138" r="46"/><circle cx="92" cy="122" r="54"/><circle cx="196" cy="112" r="60"/><circle cx="300" cy="124" r="54"/><circle cx="388" cy="140" r="46"/>
+      </g>
+      <g fill="none" stroke="#178a5c" stroke-width="3" stroke-linecap="round">
+        <path d="M70 96 q10 -8 22 -2 M180 80 q12 -10 26 -2 M290 100 q10 -8 22 -2 M20 120 q8 -6 16 -1"/>
+      </g>
+      <rect y="168" width="400" height="80" fill="#1f9d6b" stroke="#15131f" stroke-width="3"/>
+      <g stroke="#15131f" stroke-width="2.5">
+        <path d="M24 172 V128 M112 170 V118 M204 170 V110 M292 170 V120 M378 172 V130" fill="none"/>
+        <g fill="#ff7ab8">
+          <circle cx="24" cy="128" r="5"/><circle cx="20" cy="140" r="4.5"/><circle cx="28" cy="150" r="4"/>
+          <circle cx="112" cy="118" r="5"/><circle cx="116" cy="130" r="4.5"/><circle cx="108" cy="141" r="4"/>
+          <circle cx="204" cy="110" r="5"/><circle cx="200" cy="122" r="4.5"/><circle cx="208" cy="133" r="4"/>
+          <circle cx="292" cy="120" r="5"/><circle cx="296" cy="132" r="4.5"/><circle cx="288" cy="143" r="4"/>
+          <circle cx="378" cy="130" r="5"/><circle cx="374" cy="142" r="4.5"/><circle cx="382" cy="152" r="4"/>
+        </g>
+      </g>
+      <g fill="none" stroke="#15131f" stroke-width="2.5" stroke-linecap="round">
+        <path d="M8 246 l-4 -14 M14 246 l1 -18 M20 246 l5 -13 M380 246 l-5 -14 M387 246 l0 -18 M394 246 l4 -12"/>
+      </g>
+
+      <!-- Figur 1: Kappe, mintfarbener Hoodie, kurze Hose -->
+      <g transform="translate(70 266) scale(1) translate(0 -266)"><g class="bob">
+        <use href="#legs"/>
+        <path d="M-25 178 h50 v38 h-21 l-4 -16 l-4 16 h-21 z" fill="#d9c7a3" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <ellipse cx="0" cy="120" rx="27" ry="13" fill="#9fcdb4" stroke="#15131f" stroke-width="3"/>
+        <rect x="-40" y="124" width="14" height="50" rx="7" fill="#b7dcc6" stroke="#15131f" stroke-width="3"/>
+        <rect x="-40" y="168" width="14" height="7" rx="3" fill="#9fcdb4" stroke="#15131f" stroke-width="2.5"/>
+        <circle cx="-33" cy="181" r="7" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+        <rect x="-27" y="118" width="54" height="68" rx="13" fill="#b7dcc6" stroke="#15131f" stroke-width="3"/>
+        <path d="M-15 160 h30 l5 18 h-40 z" fill="#a9d3bc" stroke="#15131f" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M-6 124 v16 M6 124 v20" stroke="#fdfdf6" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="-27" y="180" width="54" height="7" rx="3" fill="#9fcdb4" stroke="#15131f" stroke-width="2.5"/>
+        <rect x="26" y="124" width="14" height="34" rx="7" fill="#b7dcc6" stroke="#15131f" stroke-width="3"/>
+        <g transform="translate(33 152)"><g class="cheers"><g transform="rotate(-28)">
+          <rect x="-30" y="-7" width="35" height="14" rx="7" fill="#b7dcc6" stroke="#15131f" stroke-width="3"/>
+          <g transform="translate(-27 0) rotate(28)"><use href="#bottle"/></g>
+        </g></g></g>
+        <use href="#head"/>
+        <path d="M-24 88 q-2 -6 2 -10 M24 88 q2 -6 -2 -10" fill="none" stroke="#b08a5a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M-23 80 C-27 56 27 56 23 80 Q0 73 -23 80 Z" fill="#cdb48c" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M0 62 V76" stroke="#15131f" stroke-width="2"/>
+        <path d="M18 76 q18 -6 30 3 q-15 5 -30 1 z" fill="#b89b6e" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="-14" y="65" width="11" height="7" rx="2" fill="#ff7a3d" stroke="#15131f" stroke-width="2"/>
+        <use href="#eyes"/>
+        <path d="M-8 102 q8 8 16 0" fill="#fdfdf6" stroke="#15131f" stroke-width="2.5" stroke-linejoin="round"/>
+      </g></g>
+
+      <!-- Figur 2: dunkle Haare, Vollbart, graues Shirt -->
+      <g transform="translate(155 266) scale(1) translate(0 -266)"><g class="bob b2">
+        <use href="#legs"/>
+        <path d="M-25 176 h50 v42 h-21 l-4 -16 l-4 16 h-21 z" fill="#3b4252" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="-39" y="146" width="12" height="32" rx="6" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+        <rect x="-41" y="122" width="16" height="30" rx="8" fill="#8a8a8a" stroke="#15131f" stroke-width="3"/>
+        <circle cx="-33" cy="183" r="7" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+        <rect x="-27" y="118" width="54" height="64" rx="13" fill="#9a9a9a" stroke="#15131f" stroke-width="3"/>
+        <path d="M-10 119 q10 9 20 0" fill="none" stroke="#15131f" stroke-width="2.5"/>
+        <path d="M-18 150 h10 M-20 158 h8" stroke="#7d7d7d" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="25" y="122" width="16" height="28" rx="8" fill="#8a8a8a" stroke="#15131f" stroke-width="3"/>
+        <g transform="translate(33 150)"><g class="cheers c2"><g transform="rotate(-28)">
+          <rect x="-30" y="-6" width="35" height="12" rx="6" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+          <g transform="translate(-27 0) rotate(28)"><use href="#bottle"/></g>
+        </g></g></g>
+        <use href="#head"/>
+        <path d="M-24 92 Q-26 124 0 124 Q26 124 24 92 Q18 104 0 104 Q-18 104 -24 92 Z" fill="#4a3424" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M-25 88 Q-28 62 -4 64 Q8 56 20 68 Q28 74 25 88 Q14 74 -2 76 Q-16 74 -25 88 Z" fill="#4a3424" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <use href="#eyes"/>
+        <path d="M-7 108 q7 6 14 0 z" fill="#fdfdf6" stroke="#15131f" stroke-width="2" stroke-linejoin="round"/>
+      </g></g>
+
+      <!-- Figur 3 (gespiegelt): Glatze, Bart, grünes Polo, Uhr -->
+      <g transform="translate(245 266) scale(-1 1) translate(0 -266)"><g class="bob b3">
+        <use href="#legs"/>
+        <path d="M-25 176 h50 v46 h-21 l-4 -18 l-4 18 h-21 z" fill="#ece7dc" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M-25 216 h21 M4 216 h21" stroke="#15131f" stroke-width="2.5"/>
+        <rect x="-39" y="146" width="12" height="32" rx="6" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+        <rect x="-40" y="164" width="14" height="7" rx="2" fill="#15131f"/>
+        <rect x="-41" y="122" width="16" height="30" rx="8" fill="#5fb596" stroke="#15131f" stroke-width="3"/>
+        <circle cx="-33" cy="183" r="7" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+        <rect x="-28" y="118" width="56" height="64" rx="13" fill="#6fc3a5" stroke="#15131f" stroke-width="3"/>
+        <path d="M-12 119 L0 134 L12 119 L8 116 L0 124 L-8 116 Z" fill="#5fb596" stroke="#15131f" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="0" cy="140" r="1.8" fill="#15131f"/><circle cx="0" cy="148" r="1.8" fill="#15131f"/>
+        <rect x="25" y="122" width="16" height="28" rx="8" fill="#5fb596" stroke="#15131f" stroke-width="3"/>
+        <g transform="translate(33 150)"><g class="cheers c3"><g transform="rotate(-28)">
+          <rect x="-30" y="-6" width="35" height="12" rx="6" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+          <g transform="translate(-27 0) rotate(28)"><use href="#bottle"/></g>
+        </g></g></g>
+        <use href="#head"/>
+        <path d="M-12 74 q6 -6 14 -5" fill="none" stroke="#fdfdf6" stroke-width="3" stroke-linecap="round"/>
+        <path d="M-24 94 Q-24 122 0 122 Q24 122 24 94 Q16 106 0 105 Q-16 106 -24 94 Z" fill="#8a6a4a" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <use href="#eyes"/>
+        <path d="M-9 103 q9 -5 18 0" fill="none" stroke="#6d5238" stroke-width="4" stroke-linecap="round"/>
+        <path d="M-6 109 q6 5 12 0 z" fill="#fdfdf6" stroke="#15131f" stroke-width="2" stroke-linejoin="round"/>
+      </g></g>
+
+      <!-- Figur 4 (gespiegelt): Kappe, Brille, weißes Hemd, Jeans, Gummistiefel -->
+      <g transform="translate(330 266) scale(-1 1) translate(0 -266)"><g class="bob b4">
+        <path d="M-23 176 h46 v66 h-19 l-4 -44 l-4 44 h-19 z" fill="#8d9bb0" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <g fill="#3f5a3a" stroke="#15131f" stroke-width="3"><rect x="-25" y="226" width="19" height="42" rx="4"/><rect x="6" y="226" width="19" height="42" rx="4"/></g>
+        <path d="M-25 232 h19 M6 232 h19" stroke="#15131f" stroke-width="2.5"/>
+        <rect x="-41" y="122" width="16" height="54" rx="8" fill="#fdfdf6" stroke="#15131f" stroke-width="3"/>
+        <circle cx="-33" cy="183" r="7" fill="#f2c9a5" stroke="#15131f" stroke-width="3"/>
+        <rect x="-28" y="118" width="56" height="66" rx="13" fill="#fdfdf6" stroke="#15131f" stroke-width="3"/>
+        <path d="M-9 120 V183 H9 V120 Q0 130 -9 120 Z" fill="#e8ecf2" stroke="#15131f" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M-9 120 l-9 12 l9 6 M9 120 l9 12 l-9 6" fill="none" stroke="#15131f" stroke-width="2.5" stroke-linejoin="round"/>
+        <rect x="25" y="122" width="16" height="30" rx="8" fill="#fdfdf6" stroke="#15131f" stroke-width="3"/>
+        <g transform="translate(33 152)"><g class="cheers c4"><g transform="rotate(-28)">
+          <rect x="-30" y="-7" width="35" height="14" rx="7" fill="#fdfdf6" stroke="#15131f" stroke-width="3"/>
+          <g transform="translate(-27 0) rotate(28)"><use href="#bottle"/></g>
+        </g></g></g>
+        <use href="#head"/>
+        <path d="M-24 88 q-2 -6 2 -10 M24 88 q2 -6 -2 -10" fill="none" stroke="#5a4632" stroke-width="4" stroke-linecap="round"/>
+        <path d="M-23 80 C-27 56 27 56 23 80 Q0 73 -23 80 Z" fill="#7d8a55" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M0 62 V76" stroke="#15131f" stroke-width="2"/>
+        <path d="M18 76 q18 -6 30 3 q-15 5 -30 1 z" fill="#69753f" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <use href="#eyes"/>
+        <g fill="#fdfdf6" fill-opacity=".35" stroke="#15131f" stroke-width="2.5"><circle cx="-9" cy="91" r="8"/><circle cx="9" cy="91" r="8"/></g>
+        <path d="M-1 91 h2 M-17 90 l-6 -2 M17 90 l6 -2" stroke="#15131f" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M-7 104 q7 6 14 0" fill="none" stroke="#15131f" stroke-width="2.5" stroke-linecap="round"/>
+      </g></g>
+
+      <!-- Prost-Blitz -->
+      <g transform="translate(200 34) scale(.82)"><g class="prost">
+        <polygon points="0,-34 9,-16 28,-26 22,-8 44,-4 26,6 36,24 16,16 8,36 0,18 -8,36 -16,16 -36,24 -26,6 -44,-4 -22,-8 -28,-26 -9,-16" fill="#ff4b3a" stroke="#15131f" stroke-width="3" stroke-linejoin="round"/>
+        <text x="0" y="8" text-anchor="middle" font-family="Bangers, Impact, sans-serif" font-size="22" fill="#fdfdf6" stroke="#15131f" stroke-width="1" letter-spacing="1">PROST!</text>
+      </g></g>
+
+      <!-- Bach -->
+      <rect y="240" width="400" height="60" fill="#22b8ea" fill-opacity=".9" stroke="#15131f" stroke-width="3"/>
+      <g transform="translate(70 0)"><use href="#ripples"/></g>
+      <g transform="translate(155 0)"><use href="#ripples"/></g>
+      <g transform="translate(245 0)"><use href="#ripples"/></g>
+      <g transform="translate(330 0)"><use href="#ripples"/></g>
+      <g fill="#aeb7c2" stroke="#15131f" stroke-width="3">
+        <ellipse cx="30" cy="286" rx="20" ry="9"/><ellipse cx="204" cy="290" rx="14" ry="7"/><ellipse cx="372" cy="284" rx="18" ry="9"/>
+      </g>
+      <g fill="none" stroke="#fdfdf6" stroke-width="3" stroke-linecap="round">
+        <path class="wave" d="M-10 262 q8 -6 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0"/>
+        <path class="wave w2" d="M-18 276 q8 -6 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0"/>
+      </g>
+      <g transform="translate(112 272)"><g class="fish">
+        <path d="M-12 0 q10 -9 22 0 q-12 9 -22 0 z M-12 0 l-8 -6 v12 z" fill="#ff9f1c" stroke="#15131f" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="5" cy="-1" r="1.5" fill="#15131f"/>
+      </g></g>
+    </svg>
+    <div class="pad">
+      <h2 class="kicker" id="crew">Die Besetzung</h2>
+      <p class="note">Vier Mann, vier Flaschen, ein Wochenende.</p>
+    </div>
+  </section>
+
+  <section class="panel pop" aria-labelledby="cmp">
+    <div class="pad">
+      <h2 class="kicker" id="cmp">Was kostet das Ganze?</h2>
+      <p class="note">Pro Person für zwei Nächte im Doppelzimmer, mit Frühstück und Abendessen.</p>
+      <div class="bars">
+        <div class="bar-row"><div class="bar-label"><span>Hotel Deimann</span><span>704 €</span></div><div class="track"><div class="fill" style="--w:100%;background:var(--pool)"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Landhotel Voshövel</span><span>633 €</span></div><div class="track"><div class="fill" style="--w:89.9%;background:var(--pine)"></div></div></div>
+        <div class="bar-row"><div class="bar-label"><span>Hotel Diedrich</span><span>512 €</span></div><div class="track"><div class="fill" style="--w:72.7%;background:var(--hot)"></div></div></div>
+      </div>
+      <p class="note">Getränke am Abend kommen überall noch dazu.</p>
+    </div>
+  </section>
+
+  <section class="panel pop" aria-labelledby="way">
+    <div class="pad">
+      <h2 class="kicker" id="way">Wie weit ist es?</h2>
+      <p class="note">Mit dem Auto ab Wadersloh. Die Zeiten sind Schätzungen, im Februar kann es im Sauerland winterlich sein.</p>
+      <div class="bars">
+        <div class="bar-row"><div class="bar-label"><span>Hotel Deimann</span><span>90 km · ca. 1,5 Std.</span></div><div class="track"><div class="fill" style="--w:63.4%;background:var(--pool)"></div></div><p class="note">Über Lippstadt, Warstein und Meschede, fast nur Landstraße.</p></div>
+        <div class="bar-row"><div class="bar-label"><span>Hotel Diedrich</span><span>92 km · 1,5 bis 2 Std.</span></div><div class="track"><div class="fill" style="--w:64.8%;background:var(--hot)"></div></div><p class="note">Über Warstein, Olsberg und Winterberg, fast nur Landstraße.</p></div>
+        <div class="bar-row"><div class="bar-label"><span>Landhotel Voshövel</span><span>142 km · 1,5 bis gut 2 Std.</span></div><div class="track"><div class="fill" style="--w:100%;background:var(--pine)"></div></div><p class="note">Über die A2 und A3 durchs nördliche Ruhrgebiet, freitags staugefährdet.</p></div>
+      </div>
+      <p class="note">Parken ist bei allen drei Hotels kostenlos möglich.</p>
+    </div>
+  </section>
+
+  <!-- DEIMANN -->
+  <article class="panel pop" id="deimann">
+    <div class="hotel-head" style="background:var(--pool)">
+      <span class="tag">Das Mega-Spa</span>
+      <h2>Hotel Deimann</h2>
+      <p class="where">Schmallenberg im Sauerland · 5 Sterne Superior</p>
+    </div>
+    <figure class="photo">
+      <img class="main" src="img/deimann-0.jpg" alt="Fachwerkhaus und Innenhof des Hotel Deimann">
+      <div class="thumbs">
+        <button type="button" aria-pressed="true" aria-label="Foto Hotel"><img src="img/deimann-0.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Außenpool" data-pos="50% 80%"><img src="img/deimann-1.jpg" alt="" style="object-position:50% 80%"></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Sauna" data-pos="50% 40%"><img src="img/deimann-2.jpg" alt="" style="object-position:50% 40%"></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Hallenbad"><img src="img/deimann-3.jpg" alt=""></button>
+      </div>
+    </figure>
+    <div class="pad">
+      <div class="price">
+        <div class="big">704 €<small>pro Person, 2 Nächte</small></div>
+        <div class="total"><b>2.816 €</b>gesamt mit Abendessen</div>
+      </div>
+      <dl class="facts">
+        <div><dt>Verpflegung</dt><dd>Frühstücksbuffet und 4-Gang-Menü am Abend. Nur mit Frühstück wären es 2.588 € (647 € pro Person).</dd></div>
+        <div><dt>Zimmer</dt><dd>2 × Doppelzimmer mit Balkon, je 25 m²</dd></div>
+        <div><dt>Stornierbar</dt><dd><span class="yes">Ja</span>kostenlos vor dem 5. Februar 2027</dd></div>
+        <div><dt>Zahlung</dt><dd>Nichts vor dem 3. Februar 2027</dd></div>
+        <div><dt>Booking</dt><dd><span class="score">9,3</span>Hervorragend, 237 Bewertungen</dd></div>
+        <div><dt>Weitere</dt><dd>HolidayCheck 5,7 von 6 · Google 4,8 von 5</dd></div>
+        <div><dt>Noch frei</dt><dd>4 Zimmer dieser Kategorie</dd></div>
+        <div><dt>Anfahrt</dt><dd>ca. 90 km ab Wadersloh, rund 1,5 Stunden</dd></div>
+      </dl>
+      <div class="acts">
+        <div class="act a-hike"><h3>Wandern</h3><p>Der Rothaarsteig liegt in der Nähe. Leihrucksack und Tourentipps gibt es im Hotel.</p></div>
+        <div class="act a-sauna"><h3>Sauna</h3><p>Über 5.000 m² Spa mit rund zehn Saunen und Aufgüssen. Freitags bis 22 Uhr geöffnet.</p></div>
+        <div class="act a-swim"><h3>Schwimmen</h3><p>Hallenbad mit 150 m² für richtige Bahnen, Infinity-Außenpool mit 200 m² und ein Sole-Freibad.</p></div>
+      </div>
+      <details>
+        <summary>Gut zu wissen</summary>
+        <ul>
+          <li>Im Haus: Billard, Tischtennis, Eisstockbahn und eine Hotelbar ab 17 Uhr.</li>
+          <li>Sternerestaurant im Haus, gegen Aufpreis.</li>
+          <li>Kein reines Ruhehotel, hier sind auch Familien.</li>
+          <li>Laut Booking können noch Gebühren dazukommen, zum Beispiel die Kurtaxe.</li>
+        </ul>
+      </details>
+      <a class="btn" href="https://www.booking.com/hotel/de/deimann.de.html?checkin=2027-02-19&amp;checkout=2027-02-21&amp;group_adults=4&amp;group_children=0&amp;no_rooms=1" target="_blank" rel="noopener">Auf Booking ansehen</a>
+    </div>
+  </article>
+
+  <!-- DIEDRICH -->
+  <article class="panel pop" id="diedrich">
+    <div class="hotel-head on-dark" style="background:var(--hot)">
+      <span class="tag sun">Der Preistipp</span>
+      <h2>Hotel Diedrich</h2>
+      <p class="where">Hallenberg im Sauerland · 4 Sterne Superior · nur Erwachsene</p>
+    </div>
+    <figure class="photo">
+      <img class="main" src="img/diedrich-0.jpg" alt="Beheizter Infinity-Pool des Hotel Diedrich mit Blick über Hallenberg">
+      <div class="thumbs">
+        <button type="button" aria-pressed="true" aria-label="Foto Außenpool"><img src="img/diedrich-0.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Sauna"><img src="img/diedrich-3.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Innenpool"><img src="img/diedrich-4.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Hotel"><img src="img/diedrich-1.jpg" alt=""></button>
+      </div>
+    </figure>
+    <div class="pad">
+      <div class="price">
+        <div class="big">512 €<small>pro Person, 2 Nächte</small></div>
+        <div class="total"><b>2.050 €</b>gesamt mit Abendessen</div>
+      </div>
+      <dl class="facts">
+        <div><dt>Verpflegung</dt><dd>Frühstücksbuffet und 4-Gang-Menü am Abend</dd></div>
+        <div><dt>Zimmer</dt><dd>2 × Budget-Doppelzimmer, je 17 m². Mit 24 m² wären es 2.194 € (549 € pro Person).</dd></div>
+        <div><dt>Stornierbar</dt><dd><span class="yes">Ja</span>kostenlos vor dem 22. Januar 2027</dd></div>
+        <div><dt>Zahlung</dt><dd>Erst vor Ort im Hotel, keine Vorauszahlung</dd></div>
+        <div><dt>Booking</dt><dd><span class="score">9,1</span>Hervorragend, 52 Bewertungen</dd></div>
+        <div><dt>Weitere</dt><dd>HolidayCheck 5,9 von 6 · Google 4,7 von 5</dd></div>
+        <div><dt>Noch frei</dt><dd>3 Zimmer dieser Kategorie</dd></div>
+        <div><dt>Anfahrt</dt><dd>ca. 92 km ab Wadersloh, 1,5 bis 2 Stunden</dd></div>
+      </dl>
+      <div class="acts">
+        <div class="act a-hike"><h3>Wandern</h3><p>Routen starten direkt am Hotel. Winterberg ist 15 Minuten entfernt, falls Schnee liegt.</p></div>
+        <div class="act a-sauna"><h3>Sauna</h3><p>Fünf Saunen und Dampfbäder bis 21:30 Uhr, dazu eine Schneegrotte. Aufgüsse gibt es nicht.</p></div>
+        <div class="act a-swim"><h3>Schwimmen</h3><p>Infinity-Außenpool mit 20 × 5 m und 31 Grad, dazu ein Innenpool mit 12 × 5 m.</p></div>
+      </div>
+      <details>
+        <summary>Gut zu wissen</summary>
+        <ul>
+          <li>Spa am Anreisetag schon ab 12:30 Uhr nutzbar.</li>
+          <li>Im Haus: Tischtennis, Dart, Kicker und eine Kaminbar.</li>
+          <li>Ruhehotel: Partys sind nicht erlaubt, der Eingang ist von 22 bis 7 Uhr zu.</li>
+          <li>Das Hotel liegt an einer befahrenen Straße, Anreise bis 20:30 Uhr.</li>
+        </ul>
+      </details>
+      <a class="btn" href="https://www.booking.com/hotel/de/diedrich.de.html?checkin=2027-02-19&amp;checkout=2027-02-21&amp;group_adults=4&amp;group_children=0&amp;no_rooms=1" target="_blank" rel="noopener">Auf Booking ansehen</a>
+    </div>
+  </article>
+
+  <!-- VOSHÖVEL -->
+  <article class="panel pop" id="voshoevel">
+    <div class="hotel-head on-dark" style="background:var(--pine)">
+      <span class="tag sun">Beste Bewertung</span>
+      <h2>Landhotel Voshövel</h2>
+      <p class="where">Schermbeck am Niederrhein · 4 Sterne · nur Erwachsene</p>
+    </div>
+    <figure class="photo">
+      <img class="main" src="img/vosh-0.jpg" alt="Spa-Gebäude und Außenpool des Landhotel Voshövel am Abend">
+      <div class="thumbs">
+        <button type="button" aria-pressed="true" aria-label="Foto Spa und Außenpool"><img src="img/vosh-0.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Saunagarten"><img src="img/vosh-3.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Panoramasauna"><img src="img/vosh-2.jpg" alt=""></button>
+        <button type="button" aria-pressed="false" aria-label="Foto Hotel"><img src="img/vosh-1.jpg" alt=""></button>
+      </div>
+    </figure>
+    <div class="pad">
+      <div class="price">
+        <div class="big">633 €<small>pro Person, 2 Nächte</small></div>
+        <div class="total"><b>2.532 €</b>gesamt mit Vollverpflegung</div>
+      </div>
+      <dl class="facts">
+        <div><dt>Verpflegung</dt><dd>Frühstücksbuffet, leichtes Mittagessen und 4-Gang-Menü am Abend</dd></div>
+        <div><dt>Zimmer</dt><dd>1 × Doppelzimmer mit 22 m² und 1 × Doppelzimmer mit 30 m²</dd></div>
+        <div><dt>Stornierbar</dt><dd><span class="yes">Ja</span>kostenlos vor dem 14. Februar 2027</dd></div>
+        <div><dt>Zahlung</dt><dd>Vor der Anreise an das Hotel</dd></div>
+        <div><dt>Booking</dt><dd><span class="score">9,6</span>Außergewöhnlich, 50 Bewertungen</dd></div>
+        <div><dt>Weitere</dt><dd>HolidayCheck 5,9 von 6 · Google 4,7 von 5</dd></div>
+        <div><dt>Noch frei</dt><dd><span class="warn">Knapp</span>vom günstigen Zimmer nur noch 1</dd></div>
+        <div><dt>Anfahrt</dt><dd>ca. 142 km ab Wadersloh über die A2, 1,5 bis gut 2 Stunden</dd></div>
+      </dl>
+      <div class="acts">
+        <div class="act a-hike"><h3>Wandern</h3><p>Der Dämmerwald beginnt am Hotel. Flaches Gelände, zum Beispiel 16,5 km Rundweg zum Kloster Marienthal.</p></div>
+        <div class="act a-sauna"><h3>Sauna</h3><p>Rund 4.000 m² Spa mit fünf Saunen und zwei Dampfbädern, geöffnet bis 20 Uhr.</p></div>
+        <div class="act a-swim"><h3>Schwimmen</h3><p>Beheizter Außenpool mit 16 × 5 m, Innenpool, Naturpool im Saunagarten und Whirlpool. Eher zum Treibenlassen als für Bahnen.</p></div>
+      </div>
+      <details>
+        <summary>Gut zu wissen</summary>
+        <ul>
+          <li>Im Haus: Billard, Bar und kostenlose Leihräder. Ein Golfplatz liegt 700 m entfernt.</li>
+          <li>Spa am Anreisetag erst ab 15 Uhr und am Abreisetag nur bis 15 Uhr.</li>
+          <li>Ruhehotel: Partys sind nicht erlaubt.</li>
+          <li>Freitagnachmittag kann die A2 durchs Ruhrgebiet voll sein.</li>
+        </ul>
+      </details>
+      <a class="btn" href="https://www.booking.com/hotel/de/landhotel-voshovel-schermbeck.de.html?checkin=2027-02-19&amp;checkout=2027-02-21&amp;group_adults=4&amp;group_children=0&amp;no_rooms=1" target="_blank" rel="noopener">Auf Booking ansehen</a>
+    </div>
+  </article>
+
+  <!-- ABSTIMMUNG -->
+  <section class="panel pop" aria-labelledby="vote">
+    <div class="pad">
+      <h2 class="kicker" id="vote">Wo soll es hingehen?</h2>
+      <p class="note">Tipp deinen Favoriten an, kopier den Text und schick ihn mir per WhatsApp.</p>
+      <div class="vote-opts" id="opts">
+        <button type="button" id="v-deimann" aria-pressed="false" data-name="Hotel Deimann">Hotel Deimann <span>704 €</span></button>
+        <button type="button" id="v-voshoevel" aria-pressed="false" data-name="Landhotel Voshövel">Landhotel Voshövel <span>633 €</span></button>
+        <button type="button" id="v-diedrich" aria-pressed="false" data-name="Hotel Diedrich">Hotel Diedrich <span>512 €</span></button>
+      </div>
+      <div id="result" hidden>
+        <div class="res">
+          <p class="msg" id="msg"></p>
+          <button type="button" class="copy" id="copy">Text kopieren</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p class="foot">Preise und freie Zimmer laut Booking, Stand 13. November 2026. Beides kann sich ändern. Fotos von Booking und den Websites der Hotels.</p>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement,tb=document.getElementById('theme');
+  function setTheme(t,save){root.setAttribute('data-theme',t);tb.textContent=t==='dark'?'Hell':'Dunkel';if(save){try{localStorage.setItem('theme',t);}catch(e){}}}
+  var saved=null;try{saved=localStorage.getItem('theme');}catch(e){}
+  setTheme(saved==='dark'?'dark':'light',false);
+  tb.addEventListener('click',function(){setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark',true);});
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
+    document.querySelectorAll('.pop').forEach(function(p){io.observe(p);});
+  }
+  document.querySelectorAll('.photo').forEach(function(fig){
+    var main=fig.querySelector('.main');
+    fig.querySelectorAll('.thumbs button').forEach(function(b){
+      b.addEventListener('click',function(){
+        fig.querySelectorAll('.thumbs button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+        main.src=b.querySelector('img').getAttribute('src');
+        main.style.objectPosition=b.dataset.pos||'50% 50%';
+        main.alt=b.getAttribute('aria-label');
+      });
+    });
+  });
+  var opts=document.getElementById('opts'),result=document.getElementById('result'),msg=document.getElementById('msg'),copy=document.getElementById('copy');
+  opts.addEventListener('click',function(ev){
+    var b=ev.target.closest('button');if(!b)return;
+    opts.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+    msg.textContent='Ich bin für das '+b.dataset.name+'. Bin am 19. bis 21. Februar dabei!';
+    result.hidden=false;copy.textContent='Text kopieren';
+  });
+  copy.addEventListener('click',function(){
+    var done=function(){copy.textContent='Kopiert';};
+    var fallback=function(){var r=document.createRange();r.selectNodeContents(msg);var s=getSelection();s.removeAllRanges();s.addRange(r);copy.textContent='Text markiert, jetzt kopieren';};
+    try{navigator.clipboard.writeText(msg.textContent).then(done,fallback);}catch(e){fallback();}
+  });
+})();
+</script>
+
+</html>
