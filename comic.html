@@ -23,6 +23,8 @@
   --pool:#22b8ea;
   --hot:#ff4b3a;
   --pine:#1f9d6b;
+  --map-bg:#d8f1e3;
+  --map-hill:#b3e0c6;
   --display:"Bangers","Impact","Arial Narrow Bold",sans-serif;
   --body:"Nunito","Segoe UI",system-ui,-apple-system,sans-serif;
   --line:3px solid var(--edge);
@@ -30,6 +32,8 @@
 }
 :root[data-theme="dark"]{
   color-scheme: dark;
+  --map-bg:#223a36;
+  --map-hill:#2c4a43;
   --page:#17142a;
   --dot:rgba(243,240,255,.10);
   --paper:#221f36;
@@ -171,6 +175,20 @@ details ul{margin:0;padding:0 12px 12px 30px;display:flex;flex-direction:column;
 .hero .spark.s2{animation-delay:-.8s}.hero .spark.s3{animation-delay:-1.6s}
 @keyframes twinkle{0%,100%{transform:scale(.5) rotate(0);opacity:.5}50%{transform:scale(1.1) rotate(20deg);opacity:1}}
 
+
+/* Karte */
+.map{display:block;width:100%;height:auto;background:var(--map-bg);border:var(--line);border-radius:8px}
+.map .hill{fill:var(--map-hill)}
+.map .base{fill:none;stroke:var(--fg);stroke-opacity:.16;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.map .route{fill:none;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;animation:route 6s linear infinite}
+.map text{font-family:var(--body);font-weight:800;font-size:11.5px;fill:var(--fg);paint-order:stroke;stroke:var(--map-bg);stroke-width:3.5px;stroke-linejoin:round}
+.map text.small{font-size:9.5px;font-weight:700;fill:var(--muted);stroke-width:2.5px}
+.map .city{fill:var(--fg)}
+.map .pin{stroke:var(--edge);stroke-width:3}
+.map .pin.start{fill:var(--sun)}
+.map .car{stroke:var(--edge);stroke-width:2}
+@keyframes route{0%{stroke-dashoffset:1}55%,100%{stroke-dashoffset:0}}
+
 /* Bewegung */
 .pop.in{animation:pop .55s cubic-bezier(.2,1.4,.4,1) both}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -195,7 +213,7 @@ details ul{margin:0;padding:0 12px 12px 30px;display:flex;flex-direction:column;
     <p class="sub">Zwei Nächte Sauna, Wandern und Schwimmen</p>
     <div class="chips">
       <span class="chip">Fr 19. bis So 21. Februar 2027</span>
-      <span class="chip">Nikolas, Martin, Max, Toni</span>
+      <span class="chip">Nikolas, Toni, Martin, Max</span>
       <span class="chip">2 Doppelzimmer</span>
     </div>
   </header>
@@ -418,6 +436,38 @@ details ul{margin:0;padding:0 12px 12px 30px;display:flex;flex-direction:column;
     <div class="pad">
       <h2 class="kicker" id="way">Wie weit ist es?</h2>
       <p class="note">Mit dem Auto ab Wadersloh. Die Zeiten sind Schätzungen, im Februar kann es im Sauerland winterlich sein.</p>
+      <svg class="map" viewBox="0 0 360 240" role="img" aria-label="Karte mit den drei Routen von Wadersloh zu den Hotels Deimann, Diedrich und Voshövel">
+        <defs>
+          <path id="r-dei" d="M265 49 L279 65 L279 121 L270 146 L275 185 L279 192"/>
+          <path id="r-die" d="M265 49 L283 65 L283 121 L303 144 L310 184 L323 205"/>
+          <path id="r-vos" d="M265 49 L233 44 L198 63 L172 85 L141 86 L102 83 L78 88 L50 100 L35 73 L36 57"/>
+        </defs>
+        <g class="hill"><circle cx="205" cy="236" r="20"/><circle cx="246" cy="222" r="24"/><circle cx="302" cy="232" r="28"/><circle cx="346" cy="186" r="20"/><circle cx="238" cy="176" r="14"/></g>
+        <text class="small" x="150" y="26" text-anchor="middle">Münsterland</text>
+        <text class="small" x="104" y="116" text-anchor="middle">Ruhrgebiet</text>
+        <text class="small" x="218" y="160" text-anchor="middle">Sauerland</text>
+        <text class="small" x="150" y="78" text-anchor="middle">A2</text>
+        <use class="base" href="#r-dei"/><use class="base" href="#r-die"/><use class="base" href="#r-vos"/>
+        <path class="route" pathLength="1" style="stroke:var(--pine)" d="M265 49 L233 44 L198 63 L172 85 L141 86 L102 83 L78 88 L50 100 L35 73 L36 57"/>
+        <path class="route" pathLength="1" style="stroke:var(--hot)" d="M265 49 L283 65 L283 121 L303 144 L310 184 L323 205"/>
+        <path class="route" pathLength="1" style="stroke:var(--pool)" d="M265 49 L279 65 L279 121 L270 146 L275 185 L279 192"/>
+        <g class="city"><circle cx="281" cy="65" r="3"/><circle cx="271" cy="146" r="3"/><circle cx="310" cy="184" r="3"/><circle cx="141" cy="86" r="3"/></g>
+        <text class="small" x="290" y="62">Lippstadt</text>
+        <text class="small" x="262" y="150" text-anchor="end">Meschede</text>
+        <text class="small" x="356" y="171" text-anchor="end">Winterberg</text>
+        <text class="small" x="141" y="102" text-anchor="middle">Dortmund</text>
+        <circle class="car" r="5" style="fill:var(--pine)"><animateMotion dur="6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.55;1"><mpath href="#r-vos"/></animateMotion></circle>
+        <circle class="car" r="5" style="fill:var(--hot)"><animateMotion dur="6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.55;1"><mpath href="#r-die"/></animateMotion></circle>
+        <circle class="car" r="5" style="fill:var(--pool)"><animateMotion dur="6s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.55;1"><mpath href="#r-dei"/></animateMotion></circle>
+        <circle class="pin" cx="36" cy="57" r="7" style="fill:var(--pine)"/>
+        <circle class="pin" cx="323" cy="205" r="7" style="fill:var(--hot)"/>
+        <circle class="pin" cx="279" cy="192" r="7" style="fill:var(--pool)"/>
+        <circle class="pin start" cx="265" cy="49" r="8"/>
+        <text x="265" y="34" text-anchor="middle">Wadersloh</text>
+        <text x="48" y="54">Voshövel · 142 km</text>
+        <text x="268" y="204" text-anchor="end">Deimann · 90 km</text>
+        <text x="352" y="226" text-anchor="end">Diedrich · 92 km</text>
+      </svg>
       <div class="bars">
         <div class="bar-row"><div class="bar-label"><span>Hotel Deimann</span><span>90 km · ca. 1,5 Std.</span></div><div class="track"><div class="fill" style="--w:63.4%;background:var(--pool)"></div></div><p class="note">Über Lippstadt, Warstein und Meschede, fast nur Landstraße.</p></div>
         <div class="bar-row"><div class="bar-label"><span>Hotel Diedrich</span><span>92 km · 1,5 bis 2 Std.</span></div><div class="track"><div class="fill" style="--w:64.8%;background:var(--hot)"></div></div><p class="note">Über Warstein, Olsberg und Winterberg, fast nur Landstraße.</p></div>
